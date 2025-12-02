@@ -8,18 +8,10 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Georgia', serif;
             background: #f5ebc8;
             text-align: center;
             color: #0f3a1f;
-        }
-
-        /* NAVIGATION */
-        nav {
-            background-color: #2b4f2f;
-            padding: 15px 0;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
         nav a {
@@ -34,29 +26,6 @@
             color: #E3D8B7;
         }
 
-        /* HEADER */
-        header {
-            text-align: center;
-            padding: 30px 20px;
-            background: linear-gradient(#2b4f2f, #7c9c6e);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            color: #fff;
-        }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            border: 4px solid #2b4f2f;
-            object-fit: cover;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 48px;
-            letter-spacing: 2px;
-        }
-
         .coffee-section {
             display: flex;
             justify-content: center;
@@ -67,98 +36,68 @@
             max-width: 1200px;
         }
 
-        .coffee-card {
-            background: white;
-            width: 260px;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-            text-align: left;
-        }
-
-        .coffee-card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
         .coffee-card h3 {
             margin-top: 10px;
-            color: #2b4f2f;
             font-size: 22px;
         }
 
-        .coffee-card p {
-            margin: 5px 0;
-            font-size: 15px;
-        }
-
-        .price {
+        .coffee-card p.price {
             font-weight: bold;
-            color: #3a5d39;
             margin-bottom: 10px;
             font-size: 17px;
         }
-
-        .coffee-card ul {
-            padding-left: 20px;
-            margin-top: 5px;
-            color: #0f3a1f;
-        }
     </style>
-
 </head>
 
 <body>
 
-    <nav>
-        <a href="" target="_self">Home</a>
+    <nav style="background-color:#2b4f2f; padding:15px 0; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+        <a href="home.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="aboutUs.html">About</a>
     </nav>
 
-    <header>
-        <img src="Images/CafeLogo.png" alt="Cafe Logo" class="logo">
-        <h1>Coffee Menu</h1>
+    <header style="text-align:center; padding:30px 20px; background:linear-gradient(#2b4f2f, #7c9c6e); box-shadow:0 5px 15px rgba(0,0,0,0.3); color:#fff;">
+        <img src="Images/CafeLogo.png" alt="Cafe Logo" style="width:80px; height:80px; border-radius:50%; border:4px solid #2b4f2f; object-fit:cover;">
+        <h1 style="margin:0; font-size:48px; letter-spacing:2px;">Coffee Menu</h1>
     </header>
 
     <div class="coffee-section">
 
-        <div class="coffee-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8Q_RrELDLpBSuhHF9CEAWgSBo9mRQtSy-g&s" alt="Latte">
-            <h3>Latte</h3>
-            <p class="price">₱130</p>
+        <div class="coffee-card" style="background:white; width:260px; padding:20px; border-radius:15px; box-shadow:0px 4px 12px rgba(0,0,0,0.2); text-align:left;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8Q_RrELDLpBSuhHF9CEAWgSBo9mRQtSy-g&s" alt="Latte" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+            <h3 style="color:#2b4f2f;">Latte</h3>
+            <p class="price" style="color:#3a5d39;">₱130</p>
         </div>
 
-        <div class="coffee-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8fA5FaCTJoxzXEYR_pozxE8tb8UPZppDlA&s" alt="Americano">
-            <h3>Americano</h3>
-            <p class="price">₱90</p>
+        <div class="coffee-card" style="background:white; width:260px; padding:20px; border-radius:15px; box-shadow:0px 4px 12px rgba(0,0,0,0.2); text-align:left;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8fA5FaCTJoxzXEYR_pozxE8tb8UPZppDlA&s" alt="Americano" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+            <h3 style="color:#2b4f2f;">Americano</h3>
+            <p class="price" style="color:#3a5d39;">₱90</p>
         </div>
 
-        <div class="coffee-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSgtlvgreCtfdQFGESrg5hDd7uQyrr0L9Ljw&s" alt="Cappuccino">
-            <h3>Cappuccino</h3>
-            <p class="price">₱140</p>
+        <div class="coffee-card" style="background:white; width:260px; padding:20px; border-radius:15px; box-shadow:0px 4px 12px rgba(0,0,0,0.2); text-align:left;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSgtlvgreCtfdQFGESrg5hDd7uQyrr0L9Ljw&s" alt="Cappuccino" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+            <h3 style="color:#2b4f2f;">Cappuccino</h3>
+            <p class="price" style="color:#3a5d39;">₱140</p>
         </div>
 
-        <div class="coffee-card">
-            <img src="https://quench.culligan.com/wp-content/uploads/2023/07/Is-Iced-Coffee-Good-for-You_-Exploring-Potential-Benefits-and-Tips-for-a-Healthier-Order-1.jpg?w=1024" alt="Iced Coffee">
-            <h3>Iced Coffee</h3>
-            <p class="price">₱75</p>
+        <div class="coffee-card" style="background:white; width:260px; padding:20px; border-radius:15px; box-shadow:0px 4px 12px rgba(0,0,0,0.2); text-align:left;">
+            <img src="https://quench.culligan.com/wp-content/uploads/2023/07/Is-Iced-Coffee-Good-for-You_-Exploring-Potential-Benefits-and-Tips-for-a-Healthier-Order-1.jpg?w=1024" alt="Iced Coffee" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+            <h3 style="color:#2b4f2f;">Iced Coffee</h3>
+            <p class="price" style="color:#3a5d39;">₱75</p>
         </div>
 
-        <div class="coffee-card">
-            <img src="https://thumbs.dreamstime.com/b/enjoy-strong-philippine-barako-coffee-served-rustic-bamboo-cup-rich-beans-surround-mug-woven-mats-highlighting-398690786.jpg" alt="Kopiko">
-            <h3>Kopiko</h3>
-            <p class="price">₱50</p>
+        <div class="coffee-card" style="background:white; width:260px; padding:20px; border-radius:15px; box-shadow:0px 4px 12px rgba(0,0,0,0.2); text-align:left;">
+            <img src="https://thumbs.dreamstime.com/b/enjoy-strong-philippine-barako-coffee-served-rustic-bamboo-cup-rich-beans-surround-mug-woven-mats-highlighting-398690786.jpg" alt="Kopiko" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+            <h3 style="color:#2b4f2f;">Kopiko</h3>
+            <p class="price" style="color:#3a5d39;">₱50</p>
         </div>
 
-        <div class="coffee-card">
-            <img src="https://www.tagaloglang.com/ux/wp-content/uploads/2016/11/nescafe_coffee_blend_brew_3_in_1.jpg" alt="3in1">
-            <h3>3in1</h3>
-            <p class="price">₱15</p>
+        <div class="coffee-card" style="background:white; width:260px; padding:20px; border-radius:15px; box-shadow:0px 4px 12px rgba(0,0,0,0.2); text-align:left;">
+            <img src="https://www.tagaloglang.com/ux/wp-content/uploads/2016/11/nescafe_coffee_blend_brew_3_in_1.jpg" alt="3in1" style="width:100%; height:160px; object-fit:cover; border-radius:10px;">
+            <h3 style="color:#2b4f2f;">3in1</h3>
+            <p class="price" style="color:#3a5d39;">₱15</p>
         </div>
 
     </div>
